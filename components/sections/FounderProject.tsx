@@ -46,19 +46,18 @@ export default function FounderCredibility() {
             </div>
             
             <motion.a 
-              href="https://kifkif.space" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 border border-gray-700 rounded-xl font-semibold hover:bg-gray-900 transition-colors"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.98 }}
-            >
-              Visit KifKif.space
-              <ArrowUpRight className="w-5 h-5" />
-            </motion.a>
-          </motion.div>
-          
-          <motion.div
+  href="https://kifkif.space" 
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-flex items-center gap-2 px-6 py-3 border border-gray-700 rounded-xl font-semibold hover:bg-gray-900 transition-colors"
+  whileHover={{ scale: 1.05 }}
+  whileTap={{ scale: 0.98 }}
+>
+  Visit KifKif.space
+  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+  </svg>
+</motion.a>
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
