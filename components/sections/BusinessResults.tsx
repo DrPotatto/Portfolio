@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { TrendingUp, Users, DollarSign, Target } from 'lucide-react';
+import { TrendingUp, Users, DollarSign, Target, ArrowUpRight } from 'lucide-react';
 
 export default function BusinessResults() {
   const metrics = [
@@ -81,13 +81,15 @@ export default function BusinessResults() {
           </div>
           
           <div className="mt-8 text-center">
-            <a 
+            <motion.a 
               href="/contact" 
               className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl font-semibold hover:opacity-90 transition-opacity"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.98 }}
             >
               Calculate Your Potential ROI
               <ArrowUpRight className="w-5 h-5" />
-            </a>
+            </motion.a>
           </div>
         </motion.div>
       </div>
