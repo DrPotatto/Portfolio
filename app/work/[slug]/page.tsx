@@ -80,9 +80,10 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
 />
 
       <ProjectGallery
-        images={project.gallery}
-        captions={project.galleryCaptions}
-      />
+  projectTitle={project.title} // Add this line
+  images={project.gallery}
+  captions={project.galleryCaptions}
+/>
 
       
 
