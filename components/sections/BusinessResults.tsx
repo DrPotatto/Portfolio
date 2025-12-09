@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { TrendingUp, Users, DollarSign, Target, ArrowUpRight } from 'lucide-react';
+import { TrendingUp, Users, DollarSign, Target } from 'lucide-react';
 
 export default function BusinessResults() {
   const metrics = [
@@ -88,7 +88,7 @@ export default function BusinessResults() {
               whileTap={{ scale: 0.98 }}
             >
               Calculate Your Potential ROI
-              <ArrowUpRight className="w-5 h-5" />
+              <span className="text-lg">→</span>
             </motion.a>
           </div>
         </motion.div>

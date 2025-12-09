@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { Menu, X, ArrowUpRight } from 'lucide-react';
-import Logo from './logo';
+import Logo from './Logo'; // Note: Capital L for Logo
 import Link from 'next/link';
 
 export default function Header() {

@@ -45,14 +45,16 @@ export default function FounderCredibility() {
               ))}
             </div>
             
-            <a 
+            <motion.a 
               href="https://kifkif.space" 
               target="_blank"
-              className="inline-flex items-center gap-2 px-6 py-3 border border-gray-700 rounded-xl font-semibold hover:bg-gray-900 transition-colors"
+              rel="noopener noreferrer"
+              className="px-6 py-3 border border-gray-700 rounded-xl font-semibold hover:bg-gray-900 transition-colors"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.98 }}
             >
               Visit KifKif.space
-              <ArrowUpRight className="w-5 h-5" />
-            </a>
+            </motion.a>
           </motion.div>
           
           <motion.div

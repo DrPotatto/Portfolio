@@ -37,8 +37,21 @@ const iconMap = {
 export default function ProjectGrid({ projects, showAll = false }: ProjectGridProps) {
   const [filter, setFilter] = useState('all');
   
-  // Safely handle undefined arrays
-  const allCategories = ['all', ...new Set(projects.map(p => p.category).filter(Boolean))];
+  // Safely handle undefined arrays - FIXED VERSION
+  const allCategories = ['all'];
+  const categorySet = new Set<string>();
+  
+  projects.forEach(p => {
+    if (p.category) {
+      categorySet.add(p.category);
+    }
+  });
+  
+  Array.from(categorySet).forEach(category => {
+    if (!allCategories.includes(category)) {
+      allCategories.push(category);
+    }
+  });
   
   const filteredProjects = filter === 'all' 
     ? projects 
