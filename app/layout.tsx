@@ -14,6 +14,7 @@ export const metadata: Metadata = {
   description: 'Design systems that increase conversion rates by 40-215% for e-commerce companies. Founder of KifKif.space with 5,000+ users.',
   keywords: ['e-commerce design', 'marketing design', 'conversion optimization', 'OBM', 'Oussama Ben Marzouk'],
   authors: [{ name: 'Oussama Ben Marzouk' }],
+  metadataBase: new URL('https://oussama-ben-marzouk.netlify.app'),
   
   openGraph: {
     type: 'website',
