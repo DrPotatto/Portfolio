@@ -62,7 +62,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
         title={project.title}
         subtitle={project.subtitle}
         category={project.category}
-        year={project.year}
+        year={Number(project.year)}
         heroImage={project.heroImage}
         liveUrl={project.liveUrl}
       />
