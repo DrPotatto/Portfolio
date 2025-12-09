@@ -7,7 +7,7 @@ export interface Project {
   role: string;
   client?: string;
   liveUrl?: string;
-  featuredImage: string;
+  featuredImage: string; // ← This is REQUIRED
   status?: 'Completed' | 'In Development' | 'Active';
   
   // Business sections
@@ -54,7 +54,7 @@ export const projects: Project[] = [
     client: "Fintech Startup",
     liveUrl: "https://tradeflow-pro.com",
     status: "Completed",
-	featuredImage: '/images/projects/tradeflow-pro/dashboard-view.webp',
+    featuredImage: '/images/projects/tradeflow-pro/dashboard-view.webp',
     
     businessChallenge: "Professional traders needed a unified platform combining advanced charting, AI-driven insights, and automated trading scripts. Existing solutions were fragmented across multiple tools with poor integration and monthly costs exceeding $500 per user.",
     
@@ -110,8 +110,6 @@ export const projects: Project[] = [
       "/images/projects/tradeflow-pro/script-marketplace.webp"
     ],
     
-    
-    
     testimonial: {
       quote: "Oussama delivered a production-ready platform that exceeded our expectations. His dual expertise in design and Next.js 14 development meant we avoided the typical handoff issues and launched 2 months ahead of schedule. The platform now serves 500+ active traders daily.",
       author: "Michael Chen",
@@ -127,7 +125,7 @@ export const projects: Project[] = [
     year: 2023,
     role: "Marketing Designer & Growth Strategist",
     status: "Completed",
-	featuredImage: '/images/projects/ft45-fitness/gym.webp',
+    featuredImage: '/images/projects/ft45-fitness/gym.webp',
     
     businessChallenge: "A premium fitness studio with excellent facilities was struggling with inconsistent social media presence, resulting in low membership growth and high customer acquisition costs despite positive word-of-mouth.",
     
@@ -165,8 +163,6 @@ export const projects: Project[] = [
       "/images/projects/ft45-fitness/gym.webp"
     ],
     
-    
-    
     testimonial: {
       quote: "The marketing system Oussama created became our growth engine. We went from struggling to fill classes to having waiting lists within 90 days. His designs not only looked great but were strategically crafted to convert viewers into members.",
       author: "Sarah Johnson",
@@ -183,6 +179,7 @@ export const projects: Project[] = [
     role: "Product Designer & Frontend Developer",
     client: "Dating Startup",
     status: "In Development",
+    featuredImage: "/images/projects/cintaconnect/hero-showcase.webp", // ADDED THIS LINE
     
     businessChallenge: "Existing video chat platforms lacked proper safety features and community guidelines, leading to poor user experiences. There was a clear market need for a secure alternative to Omegle with modern features and respectful interactions.",
     
@@ -229,8 +226,6 @@ export const projects: Project[] = [
       "/images/projects/cintaconnect/safety-features.webp",
       "/images/projects/cintaconnect/mobile-app-preview.webp"
     ],
-    
-    
   },
   {
     slug: "kifkif-space",
@@ -240,6 +235,7 @@ export const projects: Project[] = [
     year: "2023-Present",
     role: "Founder, Product Designer & Full-Stack Developer",
     status: "Active",
+    featuredImage: "/images/projects/kifkif-space/hero-showcase.webp", // ADDED THIS LINE
     
     businessChallenge: "Tunisian market lacked unified reward platforms, with brands running isolated loyalty programs leading to low user engagement. Customers wanted a single platform to earn rewards across multiple brands.",
     
@@ -288,8 +284,6 @@ export const projects: Project[] = [
       "/images/projects/kifkif-space/growth-analytics.webp"
     ],
     
-    
-    
     testimonial: {
       quote: "Building KifKif from scratch taught me everything about startup metrics—CAC, LTV, retention, and scalable architecture. This founder experience means I understand business challenges from both design and technical perspectives, which informs every client project I take on.",
       author: "Oussama Ben Marzouk",
@@ -306,6 +300,7 @@ export const projects: Project[] = [
     role: "3D Designer & UX Developer",
     client: "Premium Home Decor Brand",
     status: "Completed",
+    featuredImage: "/images/projects/luxe-home/hero-showcase.webp", // ADDED THIS LINE
     
     businessChallenge: "High-value home decor items ($500-$5,000 range) suffered from 35% return rates due to customers being unable to visualize products in their space. This created logistical costs and customer dissatisfaction.",
     
@@ -353,8 +348,6 @@ export const projects: Project[] = [
       "/images/projects/luxe-home/product-configurator.webp",
       "/images/projects/luxe-home/mobile-ar-demo.webp"
     ],
-    
-    
     
     testimonial: {
       quote: "The 3D visualization feature transformed our sales process. Customers now buy with confidence, and our support team spends less time on sizing questions. The implementation was seamless and integrated perfectly with our existing Next.js storefront.",
